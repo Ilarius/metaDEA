@@ -1,0 +1,19 @@
+Package: metaDEA
+Type: Package
+Title: Perform co-DE gene analysis
+Description: Perform a meta-analysis of gene expression data, integrating the results of different differential expression analysis. Subset a list of differential expression analyses based on fold changes and p-values. Find gene statistics and find and plot the most consistent co-differentially expressed genes across the comparisons.
+Version: 0.1.0
+Author: Ilario De Toma
+Maintainer: Ilario De Toma <idetoma@imim.es>
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+biocViews: GeneExpression, Transcription, DifferentialExpression, CellBiology, BiomedicalInformatics, Cheminformatics, Epigenetics, Genetics, FunctionalGenomics, Proteomics, Transcriptomics, SystemsBiology, GraphAndNetwork, Microarray, Sequencing, RNASeq, Network
+Roxygen: list(markdown = TRUE)
+Imports: igraph, plot3D, utils, stats, grDevices, graphics
+BiocType: Software
+License: Artistic-2.0
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
