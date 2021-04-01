@@ -453,3 +453,10 @@ plot_gene_coDE_newtork <- function(dataset=NULL, genes=NULL, top=NULL, code_matr
 #use_git()
 # devtools::build() to create a package bundle with the vignettes included.
 #devtools::install_github(build_vignettes = TRUE)
+# $ git config --global user.name "Ilarius"
+# $ git config --global user.email "ilario.detoma@gmail.com"
+# $ cd /Users/ilario/OneDrive\ -\ CRG\ -\ Centre\ de\ Regulacio\ Genomica/Dropbox\ \(CRG\)/metaDEA 
+# $ git remote add origin https://github.com/Ilarius/metaDEA.git
+# $ git pull origin master
+# fatal: Couldn't find remote ref master
+# $ git push -u origin master
