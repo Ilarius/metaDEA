@@ -1,17 +1,7 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 metaDEA
 =======
 
-<style>
-pre {
-  overflow-x: auto;
-}
-pre code {
-  word-wrap: normal;
-  white-space: pre;
-}
-</style>
 ### Introduction
 
 meta-analysis of differential expression analyses (metaDEA) is a simple package that provide easy functions to integrate the results of previously computed differential expression analyses to find out the genes that are more consistently differentially expressed across different comparisons and their statistics. The power of this package is that it allows to perform meta-analysis on highly heterogeneneous transcriptomic data. Classical co-expression analyses is sensitive to outliers and require high-quality homogenous data, especially in terms of platform. To overcome this limitation we developed a simpler method that uses previously computed differential expression analyses. This allows to apply the suitable method for each specific platform (e.g. moderated t-statistics for microarray and negative binomial for RNA-sequencing data) and thereafter, integrating the results by simply analyzing the already computed log2 fold changes and adjusted p-values.
@@ -242,7 +232,7 @@ The function also return the graph as an object for further analysis. Summary st
 
 ``` r
 summary(network)
-#> IGRAPH a1fcf78 UNW- 50 1099 -- 
+#> IGRAPH 798ee0e UNW- 50 1099 -- 
 #> + attr: name (v/c), size (v/n), color (v/c), weight (e/n), width (e/n)
 ```
 

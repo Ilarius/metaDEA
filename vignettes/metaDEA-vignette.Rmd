@@ -13,16 +13,18 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-<style>
-pre {
-  overflow-x: auto;
-}
-pre code {
-  word-wrap: normal;
-  white-space: pre;
-}
-</style>
 
+
+```{css, echo=FALSE}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  word-break: keep-all !important;
+  word-wrap: normal !important;
+  max-height: 300px;
+}
+```
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
