@@ -354,6 +354,17 @@ plot_gene_coDE_newtork <- function(dataset=NULL, genes=NULL, top=NULL, code_matr
   igraph::E(graph_code)$width <- log2(igraph::E(graph_code)$weight)
   
   
+  
+  new_colors=rep(NA, igraph::ecount(graph_code))
+  
+  for(i in 1:length(new_colors)){
+    percent=1/max(igraph::E(graph_code)$width)*igraph::E(graph_code)$width[i]
+    
+    new_colors[i] <- grDevices::adjustcolor("gray", alpha.f = percent)
+  }
+  igraph::E(graph_code)$color=new_colors
+  
+  
   whitered <- grDevices::colorRampPalette(c("white", "red"))
   bluewhite <- grDevices::colorRampPalette(c("blue", "white"))
   
