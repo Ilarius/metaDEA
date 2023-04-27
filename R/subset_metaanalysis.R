@@ -138,7 +138,8 @@ subset_metanalysis <- function(dataset, adjpval=0.1, max_n_genes=Inf, abslog2FC=
 #' @export
 find_coDE <- function(gene, dataset){
 
-  suppressWarnings(if(!(gene %in% (unlist(dataset)))) stop("the provided gene ID is not present in your datasets"))
+  suppressWarnings(if (sum(!(gene %in% (unlist(dataset))))>0) 
+    stop("the provided gene ID is not present in your datasets"))
   if(!("names" %in% names(dataset))) stop("there is no sublist called 'names'")
   if(is.null(names(dataset$names))) stop("your sublists should be named")
   
